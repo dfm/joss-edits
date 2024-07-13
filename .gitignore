@@ -1,0 +1,4 @@
+.pixi
+*.egg-info
+api_key
+.joss

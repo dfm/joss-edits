@@ -1,0 +1,21 @@
+[project]
+name = "joss-edits"
+version = "0.1.0"
+description = "Help me edit JOSS papers"
+authors = ["Dan F-M <foreman.mackey@gmail.com>"]
+channels = ["conda-forge"]
+platforms = ["osx-arm64"]
+
+[tasks]
+edit = "python joss_edits.py"
+
+[dependencies]
+python = "3.11.*"
+requests = ">=2.32.3,<2.33"
+pydantic = ">=2.8.2,<2.9"
+click = ">=8.1.7,<8.2"
+plumbum = ">=1.8.3,<1.9"
+pyyaml = ">=6.0.1,<6.1"
+
+[pypi-dependencies]
+google-generativeai = ">=0.7.2, <0.8"
